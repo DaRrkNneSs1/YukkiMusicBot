@@ -7,7 +7,7 @@ COPY . /app/
 WORKDIR /app/
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 CMD bash start
-and
+
 FROM python:3.8.5-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
